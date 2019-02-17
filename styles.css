@@ -1,6 +1,30 @@
-.nav{
-	border: 1px solid black;
+nav{
+	display: flex;
+	border-bottom: 1px solid lightgray;
+	box-shadow: 0px 1px gray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
 }
-.size{
-	font-size: 199;
+.n-item{
+	font-size: 20px;
+	align-self: flex-end;
+	padding: 12px;
+}
+.n-item1{
+	font-size: 22px;
+	align-self: flex-start;
+	padding: 12px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+img{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100vh;
 }
