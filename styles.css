@@ -35,7 +35,7 @@ a{
 	position: relative;
 	top: 50px;
 	left: -8px;
-	flex-shrink: 3;
+	width: 100%;
 }
 #footer{
 	display: flex;
@@ -64,8 +64,6 @@ a{
 .body{
 	display: flex;
 	flex-wrap: wrap;
-}
-.child{
 }
 .padding{
 	padding-top: 18;
