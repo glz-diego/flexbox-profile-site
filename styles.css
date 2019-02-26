@@ -1,16 +1,15 @@
 nav{
 	border-bottom: 1px solid lightgray;
-	box-shadow: 0px 1px gray;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
 	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
 	justify-content: space-between;
 	z-index: 2;
+	padding: 12px;
 }
 #nav2{
 	display: flex;
@@ -23,7 +22,7 @@ nav{
 .n-item1{
 	display: flex;
 	font-size: 22px;
-	padding: 12px;
+	padding-left: 12px;
 }
 a{
 	text-decoration: none;
@@ -31,10 +30,11 @@ a{
 }
 .img{
 	z-index: 1;
-	display: flex;
 	position: relative;
 	top: 50px;
 	left: -8px;
+	width: 70%;
+	height: 102%;
 }
 #footer{
 	display: flex;
@@ -49,7 +49,6 @@ a{
 	z-index: 3;
 }
 .button{
-	width: 270px;
 	background-color: rgb(7,99,156);
 	border-radius: 5px;
 	color: white;
@@ -71,4 +70,54 @@ a{
 }
 .icon{
 	width: 35px;
+}
+.child{
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	padding-top: 0%;
+	height: 110%;
+	display: flex;
+	width: 32%;
+	flex-shrink: 2;
+	background-color: white;
+	z-index: 2;
+	align-items: stretch;
+}
+@media (min-width: 10px) and (max-width: 600px) {
+	body {
+		display: block;
+		background-image: url(formal.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.img{
+		display: none;
+	}
+	.child{
+		display: block;
+		position: relative;
+		top: -10%;
+		background-color: transparent;
+	}
+	.n-item2{
+		display: none;
+	}
+	.body{
+		display: block;
+	}
+  }
+n-item2 {
+	display: block;
+}
+body {
+	display: flex;
+	align-content: space-between;
+}
+h2{
+	font-size: 22px;
+}
+h3{
+	font-size: 16px;
 }
